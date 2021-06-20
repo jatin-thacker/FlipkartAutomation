@@ -1,0 +1,251 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-20T08:16:37.637Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3094900000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.initDriver(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3919537000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.maximizeWindow()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify the login functionality is working as expected",
+        "description": "",
+        "id": "verify-the-login-functionality-of-flipkart-website;verify-the-login-functionality-is-working-as-expected;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 173593000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4215889000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user has navigated to the Flipkart home Page",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_has_navigated_to_the_flipkart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 616145000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks on the Login link",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_clicks_on_the_login_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600410000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters the \"bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2tlcg\u003d\u003d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2tlcg\u003d\u003d\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_enters_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2109773000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the login button",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2290483000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The login should be \"successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"successful\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.FlipkartLoginSteps.the_login_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-20T08:16:54.870Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2316730000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.initDriver(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 111321000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.maximizeWindow()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify the login functionality is working as expected",
+        "description": "",
+        "id": "verify-the-login-functionality-of-flipkart-website;verify-the-login-functionality-is-working-as-expected;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 127076000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2837346000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user has navigated to the Flipkart home Page",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_has_navigated_to_the_flipkart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52454000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks on the Login link",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_clicks_on_the_login_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 560611000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters the \"bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2s\u003d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2s\u003d\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_enters_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2147070000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the login button",
+            "match": {
+              "location": "stepDefinition.FlipkartLoginSteps.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2103005000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The login should be \"unsuccessful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unsuccessful\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.FlipkartLoginSteps.the_login_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the login functionality of Flipkart website",
+    "description": "",
+    "id": "verify-the-login-functionality-of-flipkart-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/scenarios/FlipkartLogin.feature",
+    "tags": []
+  }
+]
