@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/scenarios"}, 
         glue={"stepDefinition"},
-        publish=true,
+        publish=false,
         plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
         		 "junit:target/cucumber-reports/Cucumber.xml",
         		 "html:target/cucumber-reports/Cucumber.html"}
