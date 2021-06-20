@@ -2,6 +2,8 @@ package stepDefinition;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -49,10 +51,17 @@ public class Hook extends BaseClass{
 		BaseClass.driver.manage().window().maximize();
 	}
 
-	@After(order = 0)
+	@After(order = 1)
 	public void teardown() {
 		BaseClass.driver.quit();
 		//eyes.closeAsync();
+	}
+	@After(order=0)
+	public void tearDown(Scenario scenario) {
+	    if (scenario.isFailed()) {
+	      final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
+		  scenario.attach(screenshot, "img/png", "Failed");
+	    }
 	}
 
 }
