@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="19.384">
-    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected" time="10.561">
-        <system-out>
-            <![CDATA[Given The user has navigated to the Flipkart home Page......................passed
-And The user clicks on the Login link.......................................passed
-When The user enters the "bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2tlcg==".passed
-And The user clicks on the login button.....................................passed
-Then The login should be "successful".......................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected 2" time="8.571">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.436">
+    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected" time="20.171">
+        <failure message="Login failed, Test case failed" type="java.lang.AssertionError">
             <![CDATA[Given The user has navigated to the Flipkart home Page......................passed
 And The user clicks on the Login link.......................................passed
 When The user enters the "bWFpbC5qYXRpbnRAZ21haWwuY29tOkpANzFuVGhhY2s=".....passed
 And The user clicks on the login button.....................................passed
-Then The login should be "unsuccessful".....................................passed
+Then The login should be "successful".......................................failed
+
+StackTrace:
+java.lang.AssertionError: Login failed, Test case failed
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinition.FlipkartLoginSteps.the_login_should_be(FlipkartLoginSteps.java:65)
+	at ✽.The login should be "successful"(file:///home/jatin/git/flipkart/FlipkartRegression/src/test/resources/scenarios/FlipkartLogin.feature:11)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

@@ -2,10 +2,9 @@ package stepDefinition;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 
 import common.BaseClass;
 import io.cucumber.java.After;
@@ -53,15 +52,15 @@ public class Hook extends BaseClass{
 
 	@After(order = 1)
 	public void teardown(Scenario scenario) {
-		if (scenario.isFailed()) {
-		      try{
-		    	  final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
-				  scenario.attach(screenshot, "img/png", "Failed");
-			  }
-		      catch(Exception e) {
-		    	  System.out.println("Screenshot failed");
-		      }
-		}
+//		if (scenario.isFailed()) {
+//		      try{
+//		    	  final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
+//				  scenario.attach(screenshot, "img/png", "Failed");
+//			  }
+//		      catch(Exception e) {
+//		    	  System.out.println("Screenshot failed");
+//		      }
+//		}
 		BaseClass.driver.quit();
 		//eyes.closeAsync();
 	}
