@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="27.804">
-    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected" time="17.213">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="19.384">
+    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected" time="10.561">
         <system-out>
             <![CDATA[Given The user has navigated to the Flipkart home Page......................passed
 And The user clicks on the Login link.......................................passed
@@ -10,7 +10,7 @@ Then The login should be "successful".......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected 2" time="10.276">
+    <testcase classname="Verify the login functionality of Flipkart website" name="Verify the login functionality is working as expected 2" time="8.571">
         <system-out>
             <![CDATA[Given The user has navigated to the Flipkart home Page......................passed
 And The user clicks on the Login link.......................................passed

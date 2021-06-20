@@ -1,5 +1,6 @@
-/home/jatin/eclipse-workspace/FlipkartRegression/src/main/java/common/Utilities.java
-/home/jatin/eclipse-workspace/FlipkartRegression/src/main/java/common/BaseClass.java
-/home/jatin/eclipse-workspace/FlipkartRegression/src/main/java/stepDefinition/Hook.java
-/home/jatin/eclipse-workspace/FlipkartRegression/src/main/java/pages/FlipkartHomePage.java
-/home/jatin/eclipse-workspace/FlipkartRegression/src/main/java/runner/RunnerTests.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/stepDefinition/FlipkartLoginSteps.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/common/Utilities.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/common/BaseClass.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/pages/FlipkartHomePage.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/pages/FlipkartLoginPage.java
+/home/jatin/git/flipkart/FlipkartRegression/src/main/java/stepDefinition/Hook.java
