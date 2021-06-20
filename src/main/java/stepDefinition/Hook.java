@@ -54,11 +54,15 @@ public class Hook extends BaseClass{
 	@After(order = 1)
 	public void teardown(Scenario scenario) {
 		if (scenario.isFailed()) {
-		      final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
-			  scenario.attach(screenshot, "img/png", "Failed");
-		    }
+		      try{
+		    	  final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
+				  scenario.attach(screenshot, "img/png", "Failed");
+			  }
+		      catch(Exception e) {
+		    	  System.out.println("Screenshot failed");
+		      }
+		}
 		BaseClass.driver.quit();
 		//eyes.closeAsync();
 	}
-
 }
