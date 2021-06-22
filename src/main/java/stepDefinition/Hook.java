@@ -34,7 +34,7 @@ public class Hook extends BaseClass{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-		//options.addArguments("--headless"); // Bypass OS security model
+		options.addArguments("--headless"); // Bypass OS security model
 		options.addArguments("--window-size=1920,1080");
 		options.addArguments("--start-maximized");
 		BaseClass.driver = new ChromeDriver(options);
