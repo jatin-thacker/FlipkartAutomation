@@ -2,11 +2,8 @@ package stepDefinition;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import common.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -37,7 +34,7 @@ public class Hook extends BaseClass{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-		options.addArguments("--headless"); // Bypass OS security model
+		//options.addArguments("--headless"); // Bypass OS security model
 		options.addArguments("--window-size=1920,1080");
 		options.addArguments("--start-maximized");
 		BaseClass.driver = new ChromeDriver(options);
@@ -53,12 +50,16 @@ public class Hook extends BaseClass{
 
 	@After(order = 1)
 	public void teardown(Scenario scenario) {
-		if (scenario.isFailed()) {
-		      final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
-			  scenario.attach(screenshot, "img/png", "Failed");
-		    }
+//		if (scenario.isFailed()) {
+//		      try{
+//		    	  final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
+//				  scenario.attach(screenshot, "img/png", "Failed");
+//			  }
+//		      catch(Exception e) {
+//		    	  System.out.println("Screenshot failed");
+//		      }
+//		}
 		BaseClass.driver.quit();
 		//eyes.closeAsync();
 	}
-
 }
